@@ -182,3 +182,43 @@ public class E02AVLTree<T> {
         return y;
     }
 }
+/*
+Insert:
+Mejor caso: O(log n) el árbol está balanceado y se inserta sin muchas rotaciones.
+Peor: O(log n) recorre la altura del árbol y rebalancea.
+Promedio: O(log n) siempre mantiene altura logarítmica.
+Depende de la altura del árbol (log n)
+
+Delete:
+Mejor caso: O(log n) elimina y rebalancea rápidamente.
+Peor: O(log n) recorre el árbol y aplica rotaciones.
+Promedio: O(log n) mantiene balance en cada operación.
+Depende de la altura del árbol (log n)
+
+Search:
+Mejor caso: O(log n) elimina y rebalancea rápidamente.
+Peor: O(log n) recorre el árbol y aplica rotaciones.
+Promedio: O(log n) mantiene balance en cada operación.
+Depende de la altura del árbol (log n)
+
+height:
+Mejor caso: O(1) retorna valor almacenado.
+Peor: O(1) acceso directo.
+Promedio: O(1) siempre constante.
+No depende del tamaño del árbol
+
+Size:
+Mejor caso: O(1) retorna valor almacenado.
+Peor: O(1) acceso directo.
+Promedio: O(1) siempre constante.
+No depende del tamaño del árbol
+
+2. Comparación con bst normal
+Mejor caso: O(log n) igual que AVL si está balanceado.
+Peor: O(n) el árbol se desbalancea y se vuelve una lista.
+Promedio: O(log n) si los datos están distribuidos.
+Depende del orden de inserción y la forma del árbol
+
+AVL mantiene O(log n) siempre porque se rebalancea automáticamente,
+a diferencia del BST que puede degradarse a O(n)
+ */
